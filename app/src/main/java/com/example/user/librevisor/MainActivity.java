@@ -77,11 +77,6 @@ public class MainActivity extends Activity {
 
         Iterator<ApplicationInfo> itr = packages.iterator();
 
-        while (itr.hasNext()) {
-            if (itr.next().name == null) {
-                itr.remove();
-            }
-        }
 
         return packages;
     }
