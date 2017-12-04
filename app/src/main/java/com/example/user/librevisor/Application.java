@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.provider.Settings;
 
-//import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -100,15 +100,15 @@ public class Application {
     }
 
     public Boolean copyFile(File destination) {
-        //File initialFile = new File(getSource());
-        //try {
-        //    FileUtils.copyFileToDirectory(initialFile, destination);
+        File initialFile = new File(getSource());
+        try {
+            FileUtils.copyFileToDirectory(initialFile, destination);
             return true;
-        //} catch (IOException e) {
-        //    e.printStackTrace();
-        //}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        //return false;
+        return false;
     }
 
     public void uninstallPackage(Context context) {
