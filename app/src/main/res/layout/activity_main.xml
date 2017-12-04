@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:backgroundTint="@android:color/darker_gray"
+    tools:context="com.example.berto.librevisor.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_mngr"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ListView
+            android:id="@+id/listView_apps"
+            android:layout_width="378dp"
+            android:layout_height="393dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:cacheColorHint="@android:color/background_light"
+            android:scrollbars="vertical"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="110dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/textView"
+            android:src="@mipmap/ic_launcher_round"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listView_apps"
+            android:layout_alignStart="@+id/listView_apps"
+            android:text="Application List:"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permissions_array">
+        <item>Camera</item>
+        <item>Location</item>
+        <item>Con</item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+
+</resources>

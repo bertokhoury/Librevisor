@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:backgroundTint="@android:color/darker_gray">
+
+    <TextView
+        android:id="@+id/app_being_managed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Application:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/uninstall_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="52dp"
+        android:onClick="uninstallApp"
+        android:text="Uninstall" />
+
+    <Button
+        android:id="@+id/extract_apk_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goto_settings_button"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/goto_settings_button"
+        android:onClick="extractAPK"
+        android:text="Extract APK" />
+
+    <Button
+        android:id="@+id/goto_settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uninstall_button"
+        android:layout_alignStart="@+id/uninstall_button"
+        android:layout_marginBottom="69dp"
+        android:onClick="goToDeviceSettings"
+        android:text="Go To Device Settings" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/app_being_managed"
+        android:layout_below="@+id/app_being_managed"
+        android:text="textView2"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:text="Package Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="textView4"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goto_settings_button"
+        android:layout_alignStart="@+id/goto_settings_button"
+        android:layout_marginBottom="52dp"
+        android:onClick="goToMainActivity"
+        android:text="Return to Application List" />
+
+    <ImageView
+        android:id="@+id/undo_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/uninstall_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/uninstall_button"
+        android:layout_below="@+id/goto_settings_button"
+        android:layout_toEndOf="@+id/uninstall_button"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <ImageView
+        android:id="@+id/extractapk_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/extract_apk_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/extract_apk_button"
+        android:layout_toEndOf="@+id/extract_apk_button"
+        android:src="@mipmap/apk_image" />
+
+    <ImageView
+        android:id="@+id/settings_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/goto_settings_button"
+        android:layout_alignEnd="@+id/undo_image"
+        android:layout_below="@+id/button4"
+        android:layout_toEndOf="@+id/goto_settings_button"
+        android:src="@mipmap/settings_image" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Librevisor</string>
+    <string name="device_mngr">Android Device Manager</string>
+
+    <string name="extract_string">Extracting APK</string>
+    <string name="devicesettings_string">Moving to Android Settings</string>
+    <string name="return_string">Returning to Application List</string>
+</resources>
