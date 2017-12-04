@@ -19,9 +19,7 @@
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/list_item_string"
         android:layout_marginStart="12dp"
-        android:layout_toEndOf="@+id/list_item_string"
         android:text="TextView"
         android:textSize="12sp" />
 
