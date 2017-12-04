@@ -128,6 +128,16 @@ public class AppManagerActivity extends Activity {
     }
 
     public void deleteExtractedAPK(View view){
+        if (aPKDropLocation.exists() && aPKDropLocation.isDirectory()) {
+            File[] files = aPKDropLocation.listFiles();
+            for (File file : files) {
+                file.delete();
+            }
+            if (aPKDropLocation.listFiles().length == 0) {
+                Toast.makeText(this, deleteapk_string, Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
         Toast.makeText(this, deleteapk_string, Toast.LENGTH_LONG).show();
 
 
