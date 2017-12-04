@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/black"
     android:backgroundTint="@android:color/darker_gray"
-    tools:context="com.example.berto.librevisor.MainActivity">
+    tools:context="com.example.user.librevisor.AppManagerActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
