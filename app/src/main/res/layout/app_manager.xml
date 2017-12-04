@@ -128,8 +128,17 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button4"
-        android:layout_alignStart="@+id/button4"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toStartOf="@+id/extractapk_image"
         android:src="@mipmap/ic_launcher" />
+
+    <Button
+        android:id="@+id/delete_extracted_apk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/extract_apk_button"
+        android:layout_below="@+id/extract_apk_button"
+        android:onClick="deleteExtractedAPK"
+        android:text="Delete Extracted APK" />
 
 </RelativeLayout>

@@ -5,4 +5,5 @@
     <string name="extract_string">Extracting APK</string>
     <string name="devicesettings_string">Moving to Android Settings</string>
     <string name="return_string">Returning to Application List</string>
+    <string name="deleteapk_stringt">Deleting APK..</string>
 </resources>

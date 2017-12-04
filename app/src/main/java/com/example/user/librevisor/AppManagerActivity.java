@@ -33,6 +33,8 @@ public class AppManagerActivity extends Activity {
     private String extractAPK_string;
     private String goToDeviceSettings_string;
     private String return_string;
+    private String deleteapk_string;
+
 
 
     private Application selectedApp;
@@ -73,6 +75,7 @@ public class AppManagerActivity extends Activity {
         extractAPK_string = (String) getResources().getText(R.string.extract_string);
         goToDeviceSettings_string = (String) getResources().getText(R.string.devicesettings_string);
         return_string = (String) getResources().getText(R.string.return_string);
+        deleteapk_string = (String) getResources().getText(R.string.deleteapk_stringt);
     }
 
 
@@ -123,4 +126,11 @@ public class AppManagerActivity extends Activity {
         selectedApp.navigateToPermissionsManager(this);
 
     }
+
+    public void deleteExtractedAPK(View view){
+        Toast.makeText(this, deleteapk_string, Toast.LENGTH_LONG).show();
+
+
+    }
+
 }
